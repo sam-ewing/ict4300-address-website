@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- WORKS CITED INCLUDED AT BOTTOM OF CODE-->
+
+
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Sam Ewing - ICT-4300-1 Fall 2020 - Address Book</title>
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="static/css/styles.css">
+        
+        <!-- Bootstrap JavaScripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+        
+    </head>
+
+    <body id="body-background-color">
+        
+        <!-- Jumbotron --> 
+        <div class="jumbotron jumbotron-fluid" id="jumbotron-main-color">
+            <div class="container">
+                <h1 class="display-4" id="jumbotron-header-text-color">Address Book Application</h1>
+                <br/>
+                <br/>
+                <p class="lead" id="jumbotron-header-text-color">Sam Ewing</p>
+                <p class="lead" id="jumbotron-header-text-color">ICT-4300-1: Web Enabled Info Systems (Fall 2020) - Professor Nirav Shah</p>
+                <p class="lead" id="jumbotron-header-text-color">University of Denver - University College</p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <!-- Bootstrap Grid -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="cell-background-color">
+                        
+                        <div>
+                            <h2 id="cell-header-text">Address Book</h2>
+                            <hr id="ruler-color-gray"/>
+                        </div>    
+
+                        <div id="output-field-formatting">
+                            <br/>
+                            <br/>
+
+                            <div id="record-display-field">
+                                <!--APPEND RECORDS HERE-->
+                            </div>
+
+                            <br/>
+                            <br/>
+                            
+                        </div>
+                        
+
+                    </div> <!-- Closes Cell-background-color -->
+                </div> <!-- Closes Col-md-12 -->
+                
+                
+            </div> <!-- Closes Row -->
+            
+            <br/>
+            <br/>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="cell-background-color">
+                        
+                        <form autocomplete="off">
+                            <div class="row">
+
+                                <div class="col">
+                                    <label for="first-name-form-field">First Name</label>
+                                    <input type="first-name" class="form-control" id="first-name-form-field">
+                                </div>
+
+                                <div class="col">
+                                    <label for="last-name-form-field">Last Name</label>
+                                    <input type="last-name" class="form-control" id="last-name-form-field">
+                                </div>
+                              
+                            </div> <!--Closes Row-->
+                            
+                            <br/>
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <label for="address-form-field">Address</label>
+                                    <input type="address" class="form-control" id="address-form-field">
+                                </div>
+
+                              
+                            </div> <!--Closes Row-->
+
+                            <br/>
+
+                            <div class="row">
+
+                                <div class="col">
+                                    <label for="city-form-field">City</label>
+                                    <input type="city" class="form-control" id="city-form-field">
+                                </div>
+
+                                <div class="col">
+                                    <label for="state-form-field">State</label>
+                                    <input type="state" class="form-control" id="state-form-field">
+                                </div>
+
+                                <div class="col">
+                                    <label for="zip-form-field">Zip Code</label>
+                                    <input type="zip" class="form-control" id="zip-form-field">
+                                </div>
+
+                              
+                            </div> <!--Closes Row-->
+
+                            <br/>
+                            
+                          </form>
+
+                    </div> <!-- Closes Cell-background-color -->
+                </div> <!-- Closes Col-md-12 -->
+                        
+
+                <div class="col-md-4">
+                    <div id="cell-background-color">
+                        
+                        <h4 id="selector-header-text">Select Record (Get / Update / Remove)</h4>
+
+                        <select id="record-selector-dropdown">
+                            <!-- APPEND RECORD NUMBERS -->
+                        </select>
+                        <br/>
+                        <br/>
+                        
+
+                        <table id="table-format">
+                            <tr>
+                                <td id="table-cell-padding">
+                                    <button id="create_button" type="submit" class="btn btn-primary" id="button-formatting">Create New Contact</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="table-cell-padding">
+                                    <button id="get_button" type="button" class="btn btn-primary" id="button-formatting" >Get Selected Contact</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="table-cell-padding">
+                                    <button id="list_button" type="button" class="btn btn-primary" id="button-formatting" >List All Contacts</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="table-cell-padding">
+                                    <button id="update_button" type="button" class="btn btn-primary" id="button-formatting">Update Selected Contact</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="table-cell-padding">
+                                    <button id="delete_button" type="button" class="btn btn-primary" id="button-formatting">Delete Selected Contact</button>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+                    </div> <!-- Closes Cell-background-color -->
+                </div> <!-- Closes Col-md-12 -->
+                
+                
+            </div> <!-- Closes Row -->
+
+        </div> <!-- Closes Container-->
+
+        <br/>
+        <br/>
+
+    </body>
+
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="static/js/functionality.js"></script>
+
+</html>
+
+
+<!-- References: 
+
+Bootstrap Grid:
+Bootstrap. N.d. “Grid System.” Bootstrap. N.d. Accessed November 12, 2020
+https://getbootstrap.com/docs/4.5/layout/grid/
+
+Bootstrap Components:
+Bootstrap. N.d. “Jumbotron.” Bootstrap. N.d. Accessed November 12, 2020
+https://getbootstrap.com/docs/4.5/components/jumbotron/
+
+Bootstrap Form Elements:
+Bootstrap. N.d. “Forms.” Bootstrap. N.d. Accessed November 12, 2020
+https://getbootstrap.com/docs/4.5/components/forms/ -->

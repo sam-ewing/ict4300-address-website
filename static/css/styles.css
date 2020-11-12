@@ -1,0 +1,123 @@
+
+#body-background-color {
+    background-color: darkred;
+}
+
+#jumbotron-main-color {
+    background-color: rgb(85, 0, 0);
+}
+
+#jumbotron-header-text-color {
+    color: white;
+}
+
+#jumbotron-subheader-text-color {
+    color: white;
+}
+
+#cell-background-color {
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+#cell-header-text {
+    text-align: center;
+}
+
+#ruler-color-gray {
+    background-color: lightgray;
+}
+
+#output-field-formatting {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+#selector-header-text{
+    text-align: center;
+}
+
+#record-selector-dropdown {
+    width: 100%;
+    font-size: 12px; 
+}
+
+#create_button {
+    width: 100%;
+    font-size: 12px;
+    background-color: rgb(85, 0, 0);
+    border-color: rgb(85, 0, 0); 
+}
+
+#get_button {
+    width: 100%;
+    font-size: 12px; 
+    background-color: rgb(85, 0, 0);
+    border-color: rgb(85, 0, 0); 
+}
+
+#list_button {
+    width: 100%;
+    font-size: 12px;
+    background-color: rgb(85, 0, 0);
+    border-color: rgb(85, 0, 0);  
+}
+
+#update_button {
+    width: 100%;
+    font-size: 12px;
+    background-color: rgb(85, 0, 0);
+    border-color: rgb(85, 0, 0);  
+}
+
+#delete_button {
+    width: 100%;
+    font-size: 12px;
+    background-color: rgb(85, 0, 0);
+    border-color: rgb(85, 0, 0); 
+}
+
+#table-format {
+    width: 100%;
+}
+
+#table-cell-padding {
+    padding: 5px;
+}
+
+.output-table {
+    width: 100%
+}
+
+.output-table-headers {
+    text-align: center;
+    font-size: 14px;
+}
+
+.output-cell-format {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px
+}
+
+.output-cell-format-for-deleted-record {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+}
+
+.successful-record-message {
+    text-align: center;
+    color: green;
+}
+
+.deleted-record-message {
+    text-align: center;
+    color: red;
+}
